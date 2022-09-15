@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <input type="text" name="name" value="" placeholder="название" style="border: solid 2px #e8e8e8; border-radius: 20px; padding: 5px 15px;">
+        </div>
+        <div>
+            <input type="text" name="cost" value="" placeholder="стоимость" style="border: solid 2px #e8e8e8; border-radius: 20px; padding: 5px 15px;">
+        </div>
+        <div>
+        
+        </div>
+        <h1>Описание</h1>
+        <div class="input__wrapper">
+            <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+            <label for="input__file" class="input__file-button">
+               <span class="input__file-icon-wrapper"><img class="input__file-icon" src="C:\Users\n2kn2\Desktop\Projects\vol22\img\photo.jpg" alt="Выбрать файл" width="25"></span>
+               <span class="input__file-button-text">Выберите файл</span>
+            </label>
+        </div>
+        
+        <div>
+            <textarea class="longInput" cols="30" rows="10" style="height: 150px; weight: 200px; border: solid 2px #e8e8e8; resize: none; border-radius: 20px; padding: 5px 15px;"></textarea>
+        </div>
+        <div>
+            <p>Комментарии разрешены<input type="checkbox" name="comments" id=""></p>
+        </div>
+    </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
