@@ -16,9 +16,13 @@
         <div>
             <input type="text" name="cost" value="" placeholder="стоимость" style="border: solid 2px #e8e8e8; border-radius: 20px; padding: 5px 15px;">
         </div>
-        <div>
-        
-        </div>
+            <div class="menu">
+                <button>Кнопка 1</button>
+                <div class="hide">
+                    <a class="burger__link">Ссылка 1</a>
+                    <a class="burger__link">Ссылка 1</a>
+                    <a class="burger__link">Ссылка 1</a>
+            </div>
         <h1>Описание</h1>
         <div class="input__wrapper">
             <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
@@ -37,6 +41,16 @@
     </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        const handleClick = event => {
+  const divs = document.querySelectorAll("div")
+  const target = event.target.nextElementSibling
+  target.classList.toggle("hide")
+}
+
+document.querySelectorAll("button").forEach(item => {
+  item.addEventListener("click", handleClick)
+})
+    </script>
 </body>
 </html>

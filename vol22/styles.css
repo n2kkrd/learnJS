@@ -79,3 +79,7 @@
     align-items: center;
     height: 50px;
   }
+
+  .hide {
+    display: none;
+}
